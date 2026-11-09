@@ -3,9 +3,8 @@
 Connects OpenClaw to the ROASaurus MCP server (`https://app.roasaurus.com/mcp`, OAuth 2.1 with dynamic client
 registration) and adds three skills: ads-audit, wasted-spend and tracking-health.
 
-After installing, sign in once:
-
-    openclaw mcp login roasaurus
+After installing, sign in once: in the Control UI, open the ROASaurus plugin page and choose **Connect** under
+**Accounts** (this needs an administrator connection).
 
 You need a ROASaurus account with a connected store, as an owner or admin of its workspace. You pick the store on the
 consent page; read-only tools are always on, and write access (proposals to the Actions inbox, applying changes) only

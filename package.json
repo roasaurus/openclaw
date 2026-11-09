@@ -1,6 +1,7 @@
 {
   "name": "@roasaurus/openclaw-roasaurus",
   "version": "1.0.0",
+  "type": "module",
   "description": "ROASaurus for OpenClaw: the ROASaurus MCP server (OAuth) plus skills for ad audits, wasted spend and tracking health.",
   "homepage": "https://roasaurus.com/integrations/mcp/openclaw",
   "author": "ROASaurus <hello@roasaurus.com>",
@@ -15,12 +16,16 @@
     "attribution"
   ],
   "files": [
+    "index.js",
     "openclaw.plugin.json",
     "skills",
     "README.md",
     "LICENSE"
   ],
   "openclaw": {
+    "extensions": [
+      "./index.js"
+    ],
     "compat": {
       "pluginApi": ">=2026.5.27"
     },
@@ -31,5 +36,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/roasaurus/openclaw.git"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.5.27"
   }
 }
