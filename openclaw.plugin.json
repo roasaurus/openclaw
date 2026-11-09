@@ -1,0 +1,14 @@
+{
+  "id": "roasaurus",
+  "name": "ROASaurus",
+  "description": "Webshop profit, attribution and ad performance from ROASaurus, with ad changes proposed to an approval inbox.",
+  "configSchema": { "type": "object", "additionalProperties": false, "properties": {} },
+  "skills": ["./skills"],
+  "mcpServers": {
+    "roasaurus": {
+      "url": "https://app.roasaurus.com/mcp",
+      "transport": "streamable-http",
+      "auth": "oauth"
+    }
+  }
+}
